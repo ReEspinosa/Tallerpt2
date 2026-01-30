@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+    <model name='omni_wheel' canonical_link='body'>
+	    <link name="body">
+		<inertial>
+			<mass>9.1</mass>
+			<inertia>
+				<ixx>0.00005</ixx>
+				<ixy>0</ixy>
+				<ixz>0</ixz>
+				<iyy>0.00005</iyy>
+				<iyz>0</iyz>
+				<izz>0.00007</izz>
+			</inertia>
+		</inertial>
+		<visual name='visual'>
+			<geometry>
+				<mesh>
+					<uri>model://paquito/yahboom/front_right_wheel_X3.stl</uri>
+				</mesh>
+			</geometry>
+			<material>
+				<ambient>1.0 1.0 1.0 1</ambient>
+				<diffuse>1.0 1.0 1.0 1</diffuse>
+				<specular>1.0 1.0 1.0 1</specular>
+			</material>
+		</visual>
+		<collision name='collision'>
+			<geometry>
+				<mesh>
+					<uri>model://paquito/yahboom/front_right_wheel_X3.stl</uri>
+				</mesh>
+			</geometry>
+		</collision>
+	    </link>
+    </model>
+</sdf>
+
